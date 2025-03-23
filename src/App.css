@@ -200,6 +200,8 @@
 
 .request-form button:hover {
   background-color: #ffcc00;
+}
+
 .nav-toggle {
   cursor: pointer;
   font-size: 2rem;
@@ -212,27 +214,27 @@
     display: block;
     position: absolute;
     top: 15px;
-    right: 30px;
+    right: 20px;
   }
 
-  .navbar ul {
+  .navbar ul.nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
-    margin-top: 60px;
-    background: #000027;
+    background: rgba(0, 0, 39, 0.95);
     position: absolute;
-    top: 0;
+    top: 60px; /* Adjust if navbar height is different */
     left: 0;
-    padding-bottom: 10px;
+    width: 100%;
+    z-index: 999;
   }
 
-  .navbar ul.open {
+  .navbar ul.nav-links.open {
     display: flex;
   }
 
-  .navbar ul li {
+  .navbar ul.nav-links li {
     width: 100%;
     text-align: center;
+    padding: 10px 0;
   }
 }
