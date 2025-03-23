@@ -122,32 +122,35 @@
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    height: auto;
   }
 
   .navbar ul {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-    margin-right: 0;
-  }
-
-  .services {
-    padding: 15px;
+    display: none;
     width: 100%;
+    background: #000027;
+    position: static;
+    margin-top: 10px;
+    padding-bottom: 10px;
   }
 
-  .navbar h2 {
-    font-size: 1.2rem;
+  .navbar ul.open {
+    display: flex;
   }
 
-  .navbar ul li a {
-    font-size: 0.95rem;
-    padding: 8px 12px;
+  .navbar ul li {
+    width: 100%;
+    text-align: center;
   }
 
-  .footer {
-    font-size: 0.75rem;
-    padding: 10px;
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #f8b400;
   }
 }
 .request-form {
@@ -194,4 +197,39 @@
 
 .request-form button:hover {
   background-color: #ffcc00;
+.nav-toggle {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #f8b400;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 60px;
+    background: #000027;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 10px;
+  }
+
+  .navbar ul.open {
+    display: flex;
+  }
+
+  .navbar ul li {
+    width: 100%;
+    text-align: center;
+  }
 }
