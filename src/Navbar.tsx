@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="nav-toggle" onClick={() => setOpen(!open)}>
         ☰
       </div>
-      <ul className={open ? 'open' : ''}>
+      <ul className={`nav-links ${open ? 'open' : ''}`}>
         <li><Link to="/" onClick={() => setOpen(false)}>Home</Link></li>
         <li><Link to="/portfolio" onClick={() => setOpen(false)}>Portfolio</Link></li>
         <li><Link to="/services" onClick={() => setOpen(false)}>Services</Link></li>
