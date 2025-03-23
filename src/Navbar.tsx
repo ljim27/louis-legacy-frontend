@@ -6,7 +6,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={{ background: 'transparent' }}>
       <h2>Louis Legacy LLC</h2>
       <div className="nav-toggle" onClick={() => setOpen(!open)}>
         ☰
