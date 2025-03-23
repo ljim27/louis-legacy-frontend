@@ -161,7 +161,7 @@ function App() {
           <a href="https://www.instagram.com/louislegacyllc/" target="_blank" rel="noopener noreferrer">Instagram</a> | 
           <a href="https://apps.apple.com/us/app/binaryme/id6742085556" target="_blank" rel="noopener noreferrer">BinaryMe App</a> | 
           <Link to="/request-info" style={{ color: '#f8b400', textDecoration: 'underline' }}>More Info</Link> | 
-          <a href="https://a.co/d/7q4irPo" target="_blank" rel="noopener noreferrer">Jesus My M.P. Book</a>
+          <a href="https://a.co/d/7q4irPo" target="_blank" rel="noopener noreferrer">Jesus My M.A.P. Book</a>
         </p>
       </footer>
     </Router>

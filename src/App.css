@@ -215,6 +215,7 @@
     position: absolute;
     top: 15px;
     right: 20px;
+    z-index: 1001;
   }
 
   .navbar ul.nav-links {
