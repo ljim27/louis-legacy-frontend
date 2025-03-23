@@ -1,0 +1,197 @@
+.app-container {
+  /* General Styles */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #00004c, #000027, #000001, #000003, #000000, #00000c, #000045, #000041, #000023, #000001, #000003, #000005, #000000, #00000c, #00000c, #000043);
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  /* Navbar */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #000027;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  padding: 0;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: #f8b400;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+  color: #ffcc00;
+}
+
+.services {
+  /* Services Section */
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(0, 0, 40, 0.8);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.footer {
+  /* Footer */
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #000045;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.footer a {
+  color: #f8b400;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+.footer a {
+  color: #f8b400;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.app-container, .services {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .services {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .navbar h2 {
+    font-size: 1.2rem;
+  }
+
+  .navbar ul li a {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+
+  .footer {
+    font-size: 0.75rem;
+    padding: 10px;
+  }
+}
+.request-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.request-form label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1rem;
+  color: #f0f0f0;
+}
+
+.request-form input,
+.request-form select,
+.request-form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.request-form button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #f8b400;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.request-form button:hover {
+  background-color: #ffcc00;
+}
